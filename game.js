@@ -380,6 +380,11 @@ function handleChoice(choice) {
     player.stress = Math.max(0, Math.min(100, player.stress));
     // Makes sure debt doesn't go under 0!
     player.debt = Math.max(0, player.debt);
+    // Makes sure bank balance doesn't go under 0, and it adds it to debt if it does. 
+    if (player.money < 0) {
+        player.debt += Math.abs(player.money);
+        player.money = 0;
+    }
 
     // Updates stats immediately
     updateStats();
