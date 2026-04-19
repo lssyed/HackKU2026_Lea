@@ -1,7 +1,7 @@
 // Player State
 let player = {
     money: 2000, 
-    debt: 30000, 
+    debt: 6000, 
     career: 1, 
     stress: 10,
     year: 1
@@ -96,7 +96,7 @@ const lifeEvents = [
             },
             {
                 text: "Ask Travel Companion for an emergency fix (-5% Stress)",
-                effect: { money: -200, stress: -5},
+                effect: { stress: -5},
                 nextEvent: "companion_clothes"
             }    
         ]
@@ -318,7 +318,6 @@ const stressFillEl = document.getElementById("stress-fill");
 const moneyEL = document.getElementById("stat-money");
 const debtEl = document.getElementById("stat-debt");
 const careerEl = document.getElementById("stat-career");
-const stressEl = document.getElementById("stat-stress");
 const titleEl = document.getElementById("event-title");
 const descEl = document.getElementById("event-description");
 const choicesContainer = document.getElementById("choices-container");

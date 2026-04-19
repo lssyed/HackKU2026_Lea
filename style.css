@@ -82,15 +82,17 @@ button:hover {
 }
 
 button:active {
-    transform: translate(1px);
+    transform: translateY(1px);
 }
+
+/*-- Stress Progress Bar --*/
 .stress-container {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.progress_bar {
+.progress-bar {
     width: 70px;
     height: 12px;
     background-color: #1A252F;
