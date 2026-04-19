@@ -388,7 +388,7 @@ function handleChoice(choice) {
         player.year += 1;
 
         // Winning Condition: No debt and good savings in account!
-        if (player.debt === 0 && player.money >= 5000) {
+        if (player.debt === 0 && player.money >= 1000) {
             loadEvent("victory_ending");
         }
         else if (player.year > 6) {
