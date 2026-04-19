@@ -18,7 +18,7 @@ body {
 /*-- Game Container & Card --*/
 #game-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     background: #FFFFFF;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(44, 62, 80, 0.1);
@@ -34,6 +34,10 @@ body {
     padding: 15px 20px;
     font-weight: 700;
     font-size: 14px;
+}
+
+.stat {
+    white-space: nowrap;
 }
 
 /*-- Event --*/
