@@ -225,7 +225,7 @@ const lifeEvents = [
     {
         id: "curveball_car",
         title: "😔Flat Tire!",
-        description: "YOu hit a massive pothole on the way to work. You need a new tire, and an Uber to get to the office on time. ",
+        description: "You hit a massive pothole on the way to work. You need a new tire, and an Uber to get to the office on time. ",
         choices: [
             {
                 text: "Dip into your savings (-$250, +15% Stress)",
@@ -314,7 +314,7 @@ const lifeEvents = [
         ]
     }
 ];
-
+const stressFillEl = document.getElementById("stress-fill");
 const moneyEL = document.getElementById("stat-money");
 const debtEl = document.getElementById("stat-debt");
 const careerEl = document.getElementById("stat-career");
@@ -330,7 +330,15 @@ function updateStats() {
     moneyEL.innerText = player.money.toLocaleString();
     debtEl.innerText = player.debt.toLocaleString();
     careerEl.innerText = player.career;
-    stressEl.innerText = player.stress;
+    stressFillEl.style.width = player.stress + "%";
+
+    if (player.stress < 40) {
+        stressFillEl.style.backgroundColor = "#2ECC71";
+    } else if (player.stress < 75) {
+        stressFillEl.style.backgroundColor = "#F1C40F";
+    } else {
+        stressFillEl.style.backgroundColor = "#E74C3C";
+    }
 }
 
 // Loads event to the screen

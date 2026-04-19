@@ -84,3 +84,24 @@ button:hover {
 button:active {
     transform: translate(1px);
 }
+.stress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress_bar {
+    width: 70px;
+    height: 12px;
+    background-color: #1A252F;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#stress-fill {
+    height: 100%;
+    width: 10%;
+    background-color: #2ECC71;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
