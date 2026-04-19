@@ -1,4 +1,4 @@
-// Player State
+// Player State: These are the starting values for the user. 
 let player = {
     money: 2000, 
     debt: 6000, 
@@ -8,6 +8,8 @@ let player = {
 };
 
 // Sequence of Life Events
+// Each option and event has its own ID, description and array of choices. 
+// Each choice has some of math associated with it, it could be adding money, reducing stress, increasing debt...
 const lifeEvents = [
     {
         id: "graduation", 
@@ -314,6 +316,9 @@ const lifeEvents = [
         ]
     }
 ];
+
+// DOM Elements
+// Allows JavaScript to update the screen without going through the entire HTML document every time a button is clicked. 
 const stressFillEl = document.getElementById("stress-fill");
 const moneyEL = document.getElementById("stat-money");
 const debtEl = document.getElementById("stat-debt");
@@ -324,7 +329,7 @@ const choicesContainer = document.getElementById("choices-container");
 
 // --- Game Functions ---
 
-// Updates stats bar
+// Updates stats bar based on amount of stress
 function updateStats() {
     moneyEL.innerText = player.money.toLocaleString();
     debtEl.innerText = player.debt.toLocaleString();
@@ -340,7 +345,7 @@ function updateStats() {
     }
 }
 
-// Loads event to the screen
+// Loads event to the screen: removes old buttons and generates new buttons based on the event's choices.
 function loadEvent(eventId) {
     const currentEvent = lifeEvents.find(event => event.id === eventId);
 
