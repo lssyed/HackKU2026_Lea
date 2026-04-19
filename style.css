@@ -1,0 +1,86 @@
+/*-- Global Styles --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #F0F4F8;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*-- Game Container & Card --*/
+#game-container {
+    width: 100%;
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(44, 62, 80, 0.1);
+    overflow: hidden;
+}
+
+/*-- Stats Bar --*/
+#stats-bar {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/*-- Event --*/
+#event-card {
+    padding: 30px;
+    text-align: center;
+}
+
+#event-title {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+#event-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+/*-- Playful Buttons --*/
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: #E2B93B;
+    color: #2C3E50;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor:pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #F4C73E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(226, 185, 59, 0.3);
+}
+
+button:active {
+    transform: translate(1px);
+}

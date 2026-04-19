@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeSim : Life After Graduation</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="game-container">
+            <header id="stats-bar">
+                <div class="stat">💸 Bank: $<span id="stat-money">0</span></div>
+                <div class="stat">📉 Debt: $<span id="stat-debt">0</span></div>
+                <div class="stat">📈 Career: Lvl <span id="stat-career">1</span></div>
+                <div class="stat">😧 Stress: <span id="stat-stress">0</span></div>
+            </header>
+
+            <main id="event-card">
+                <h2 id="event-title">Loading...</h2>
+                <p id="event-description">Getting your life ready...</p>
+
+                <div id="choices-container"></div>
+            </main>
+        </div>
+        
+        <script src="game.js"></script>
+    </body>
+</html>        
