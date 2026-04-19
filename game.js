@@ -198,7 +198,7 @@ const lifeEvents = [
     {
         id: "financial_help",
         title: "💡Lockton Financial Wellness Coach💡",
-        description: "You open your company's financial wellness portal. A quick video explains the '50/30/20 Rule': 5-% for Needs, 30% for Wants, and 20% for Savings/Debt. For your remaining $1000, a balanced approach might be best!",
+        description: "You open your company's financial wellness portal. A quick video explains the '50/30/20 Rule': 50% for Needs, 30% for Wants, and 20% for Savings/Debt. For your remaining $1000, a balanced approach might be best!",
         choices: [
             {
                 text: "Take the Balanced Approach: $500 Debt, $500 Savings/Fun (-$500, Debt -$600, -5% Stress)",
