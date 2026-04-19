@@ -239,7 +239,7 @@ const lifeEvents = [
     {
         id: "curveball_bonus",
         title: "🥳Spot Bonus!🥂",
-        description: "Your boss noticed how well you handled that Chicago trip using the Travel COmpanion app. You got a $500 spot bonus!",
+        description: "Your boss noticed how well you handled that Chicago trip using the Travel Companion app. You got a $500 spot bonus!",
         choices: [
             {
                 text: "Awesome! Put it in the bank (+$500, -10% Stress)", 
